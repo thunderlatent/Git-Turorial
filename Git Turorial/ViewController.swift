@@ -13,6 +13,7 @@ let message = "Hello Git"
     override func viewDidLoad() {
         super.viewDidLoad()
         print(message)
+        print(reverse(text: "stressted"))
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -20,7 +21,9 @@ let message = "Hello Git"
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    func reverse(text: String) -> String {
+        return String(text.reversed())
+    }
 
 }
 
