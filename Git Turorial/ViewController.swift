@@ -9,11 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-let message = "Hello Git"
+    @IBOutlet weak var reserver: UILabel!
+    let message = "Hello Git"
     override func viewDidLoad() {
         super.viewDidLoad()
         print(message)
-        print(reverse(text: "stressted"))
+        let reversed = (reverse(text: "stressted"))
+        reserver.text = reversed
         // Do any additional setup after loading the view, typically from a nib.
     }
 
